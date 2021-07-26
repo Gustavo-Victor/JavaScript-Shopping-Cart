@@ -1,0 +1,102 @@
+/*IMPORTAR FONTE*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+/*TÍTULOS*/
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+    background-color: #4c3282;
+    color: white;
+    padding: 10px 0;
+}
+
+/*DIV DE CADA PRODUTO*/
+.produto-single{
+    width: 30%;
+    margin: 20px 2% 20px 0;
+    border: 1px solid #ccc;
+}
+
+/*IMAGEM DE CADA PRODUTO*/
+.produto-single img{
+    max-width: 100%;
+}
+
+/*NOME DE CADA PRODUTO*/
+.produto-single p{
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/*LINK DO PRODUTO PARA ADICIONAR AO CARRINHO*/
+.produto-single a{
+    text-decoration: none;
+    color: white;
+    background-color: #5fb382;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    padding: 4px 0;
+    font-size: 1.1rem;
+}
+
+/*LINK AO PASSAR MOUSE POR CIMA*/
+.produto-single a:hover{
+    background-color: #44815d;
+    transition: 0.4s;
+}
+
+/*DIV QUE CONTÉM TODOS OS PRODUTOS (VITRINE)*/
+#produtos {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*DIV QUE CONTÉM O CARRINHO*/
+#carrinho {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: block;
+}
+
+/*CADA LINHA DO CARRINHO*/
+.info-single-checkout{
+    border-bottom: 2px dotted black;
+    padding: 10px 0;
+    margin-bottom: 2%;
+}
+
+/*CADA NOME DO PRODUTO NA LINHA DO CARRINHO*/
+.info-single-checkout #product{
+    float: left;
+}
+
+/*CADA QUANTIDADE DO PRODUTO NA LINHA DO CARRINHO*/
+.info-single-checkout #quantity{
+    float: right;
+}
+
+#limpar{
+    clear: both;
+}
+
+@media screen and (max-width: 768px) {
+    .produto-single{
+        width: 100%;
+        margin-right: 0;
+    }
+}
